@@ -1,0 +1,12 @@
+<?php
+session_start();
+$usu = $_SESSION['nome_usuario'];
+echo $usu;  
+if ($usu != 'Emily')
+{	echo "Acesso Negado!"; 
+    exit(); 
+}
+?>
+
+<hr />
+

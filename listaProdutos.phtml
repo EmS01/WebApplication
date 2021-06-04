@@ -1,0 +1,255 @@
+<html>
+
+  <head>
+
+    <title>Listar cursos</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://i.imgur.com/xtxyiN6.png.icon" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="estilo2.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+  .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    } 
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #00CED1;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #000000;
+    
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000;
+    background-color: #00CED1;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #00CED1;
+    color: #000000;
+  }
+
+
+  .panel {
+  border: 1px solid #00CED1;
+  border-radius:0;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #008080;
+  background-color: #E0FFFF !important;
+  color: #008080;
+}
+
+.panel-heading {
+  color: #FFF0F5 !important;
+  background-color: #008080 !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-heading h1{
+  color: #FFF0F5;
+}
+
+.panel-footer {
+  background-color: #fff !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #008080;
+  color: #fff;
+}
+
+</style>
+
+  </head>
+
+  <body>
+    
+   <!-- BARRA DE NAVEGAÇÃO-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://i.imgur.com/xtxyiN6.png" alt="logo" style="width:40px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/menuPrincipal">Home </a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="/sobreNos">Quem somos</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/Receitas">Receitas</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/produtos">Cursos</a>
+          </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Registre-se
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/cadastro">Cadastre-se</a>
+                <a class="dropdown-item" href="/login">Login</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquise aqui">
+            <button class="btn btn-outline-primary-2 my-sm-0" type="submit" style="background-color: #00CED1;">Pesquisar</button>
+          </form>
+        </div>
+    </nav>
+    <!-- FIM BARRA DE NAVEGAÇÃO-->
+
+    <!-- opções de cursos -->
+    <div class="container-fluid">
+  <div class="text-center">
+    <h2>Planos mensais</h2>
+    <h4>Escolha a forma de pagamento que cabe melhor no seu bolso</h4>
+    <br>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Básico</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>R$19</h3>
+          <h4>por mês</h4>
+          <a href="/login"><button class="btn btn-lg">Comprar</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>R$29</h3>
+          <h4>por mês</h4>
+          <a href="/login"><button class="btn btn-lg">Comprar</button></a>
+        </div>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>R$49</h3>
+          <h4>por mês</h4>
+          <a href="/login"><button class="btn btn-lg">Comprar</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Ações</th>
+          <th>Id</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+            foreach($this->view->dados as $indice => $produto) {
+            echo "<tr><td>
+                  <a href='/alterarProduto?id=" . $produto["id"] . "'>
+                      <img src='imagens/Editar-icon.png' alt='Alterar' width='25' height='25'>
+                  </a>
+
+                  <a href='/excluirProduto?id=" . $produto["id"] . "'>
+                      <img src='imagens/Lixeira-icon.png' alt='Excluir' width='25' height='25'>
+                  </a>
+
+                   <a href='/incluirProduto?id=" . $produto["id"] . "'>
+                      <img src='imagens/Adicionar-icon.png' alt='Incluir' width='25' height='25'>
+                  </a>
+                  
+                  </td><td>"
+              . $produto["id"] .
+              "</td><td>"
+              . $produto["descricao"] .
+              "</td><td>"
+              . $produto["preco"] .
+              "</td></tr>";
+          }
+        ?>
+      </tbody>
+    </table>
+  </div>
+
+    <footer class="container-fluid text-center">
+      <p>Easy cooking © </p>
+    </footer>
+  </body>
+
+
+</html>
